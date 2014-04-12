@@ -93,7 +93,15 @@ STATIC_URL = '/static/'
 SITE_ID = 1
 
 # for django-registration
+
+# Required. This is the number of days users will have to activate their
+# accounts after registering. Failing to activate during that period will leave
+# the account inactive (and possibly subject to deletion). This setting is
+# required, and must be an integer.
 ACCOUNT_ACTIVATION_DAYS = 30
+
+# enable or diable registration
+REGISTRATION_OPEN = True
 
 # for sending emails
 # see https://docs.djangoproject.com/en/1.7/topics/email/ for details
