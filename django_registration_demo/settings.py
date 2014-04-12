@@ -26,6 +26,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Application definition
 
@@ -39,6 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.sites',
     'registration',
+    'debug_toolbar',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,10 +53,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_DIRS = (
+    os.path.join(ROOT_PATH, 'templates'),
+)
+
 ROOT_URLCONF = 'django_registration_demo.urls'
 
 WSGI_APPLICATION = 'django_registration_demo.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -83,3 +89,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SITE_ID = 1
