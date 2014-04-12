@@ -1,0 +1,18 @@
+This project is just a demo project for the awesome [[https://django-registration.readthedocs.org/en/latest/][django-registration]]
+package. It contains all necessary templates from
+https://github.com/yourcelf/django-registration-defaults which makes it just
+work as expected.
+
+For now, it still lacks user profile support.
+
+For development tools, I use [[https://github.com/django-debug-toolbar/django-debug-toolbar][django-debug-toolbar]] and [[https://github.com/django-extensions/django-extensions][django-extensions]]. I also
+recommend [[http://www.doughellmann.com/projects/virtualenvwrapper/][virtualenvwrapper]] for isolized python development environment.
+
+Basic steps to view this demo:
+
+#+BEGIN_SRC sh
+mkvirtualenv django
+git clone https://github.com/CloudyArea/django-registration-demo.git
+cd django-registration-demo
+pip install -r requirements.txt
+#+END_SRC
