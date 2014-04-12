@@ -91,3 +91,20 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 SITE_ID = 1
+
+# for django-registration
+ACCOUNT_ACTIVATION_DAYS = 30
+
+# for sending emails
+# see https://docs.djangoproject.com/en/1.7/topics/email/ for details
+# for test, it just stores all emails to EMAIL_FILE_PATH
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = '/tmp/app-messages'  # change this to a proper location
+
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'your_gmail_account_name'
+# EMAIL_HOST_PASSWORD = 'your_gmail_password'
+# DEFAULT_FROM_EMAIL = 'your gmail account'
+# DEFAULT_TO_EMAIL = 'default to email'
