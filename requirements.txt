@@ -1,0 +1,5 @@
+django-registration
+django-debug-toolbar
+django-extensions
+django-devserver
+werkzeug
