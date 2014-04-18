@@ -1,7 +1,12 @@
 Django>=1.4,<1.6
 django-registration
+
+# dev tools
 django-debug-toolbar
 django-extensions
 django-devserver
 werkzeug
 ipdb
+
+# bootstrap
+django-admin-bootstrapped

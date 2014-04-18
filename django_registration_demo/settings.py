@@ -31,6 +31,8 @@ ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 # Application definition
 
 INSTALLED_APPS = (
+    'django_admin_bootstrapped.bootstrap3',
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
